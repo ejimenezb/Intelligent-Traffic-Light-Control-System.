@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import serial
 import time
 
+#Grafica acumulativa
+
 def EscribirArchivo(f1):#, f2, f3, f4, d1, d2):
 
     f1 = str(f1)#, 'UTF-8')
