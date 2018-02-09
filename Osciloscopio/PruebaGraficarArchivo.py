@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import serial
 
+#Prueba para escribir y leer archivo
+
 plt.ion()
 n=100
 
