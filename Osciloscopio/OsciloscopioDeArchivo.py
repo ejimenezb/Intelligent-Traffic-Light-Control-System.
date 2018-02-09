@@ -40,12 +40,26 @@ def DecodDig2(V):
 
 def DecodAnalog(V1,V2):
 
-    a = np.fromstring(V1, dtype=np.uint8)
-    #print('a = ' + str(a[0]))
-    b = np.fromstring(V2, dtype=np.int8)
+    #print('V1'+" = "+str(V1)+"  Su tipo es: ")
+    #print(type(V1))
+
+    a=int(V1)
+    b=int(V2)
+    #print(type(a_))
+    #a = np.fromstring(V1, dtype=np.uint8)
+    #print('a = ' + str(a)+ " "+ str(a[0]))
+    #b = np.fromstring(V2, dtype=np.int8)
     #print('b = '+str(b[0]))
 
-    Analogico = ((2 ** 7) * (a[0] & 31) + b[0])
+    a1 = a & 0x1F#31
+    b1 = b << 1
+    c = a1 << 8
+    d = b1 & 0x00FF#255
+    d = c | d
+
+    Analogico = d >> 1
+    print(Analogico)
+    #Analogico = ((2 ** 7) * (a[0] & 31) + b[0])
 
     flotante = Analogico * 3.3 / ((2 ** 12) - 1)
 
