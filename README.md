@@ -11,6 +11,7 @@ En este repositorio estan presentes los códigos necesarios para la elaboración
 
 1. Instalar el lenguaje de programacion de alto nivel "Python". Para descargarlo puede utilizar el siguiente [enlace](https://www.python.org/downloads/).<br>
 2. Instalar el IDE "Pycharm", donde se podran editar y correr los codigos de software tanto de analisis de datos, como de comunicacion e interfaz grafica. Para descargarlo puede utilizar el siguiente [enlace](https://www.jetbrains.com/pycharm/download/#section=windows).<br> 
+PD: Las imagenes no tienen enlace de ruta a la carpeta pngs para abrir las imagenes, por lo que estas deben estar en la misma carpeta que Interfaz_serial.py al momento de ejecutar
 
 ## Sensores utilizados
 
